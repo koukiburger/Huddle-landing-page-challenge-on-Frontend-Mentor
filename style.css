@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.logo{
+    position: relative;
+    top: 50px;
+}
+.image{
+    position: relative;
+    top: 150px;
+}
+.text-body{
+    width: 63ch;
+    padding: 3px;
+    text-align:justify;
+    position: relative;
+    top: 80px;
+}
+
+
+/* typography */
+h1{
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+color: white;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+/* colors */
+body {
+    background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+a{
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border: none;
+    padding: 15px ;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+/* hover effects */
+a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+/* media chkopi */
+@media screen and (max-width: 375px) {
+    body{
+        flex-direction: column;
+        background-image: none;
+        background-image: url(/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        
+    }
+    .text-body {
+            width: 63ch;
+            padding: 3px;
+            text-align: center;
+            position: relative;
+            top: 300px;
+        }
+    
+}
